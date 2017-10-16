@@ -1,0 +1,17 @@
+<h2>Available Sessions of {{ name }}</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" 
+  [class.selected]="hero === vishnu"
+  (click)="onSelect(hero)">
+    <span class="badge">{{ hero.name }}</span>
+    <!-- Age: {{ hero.age }} -->
+  </li>
+</ul>
+
+<div>
+  <label>name: </label>
+  <input [(ngModel)]="name" placeholder="name">
+</div>
+
+
+<a href="/login">Login</a>
