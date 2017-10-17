@@ -1,7 +1,7 @@
-import { Routes } from "@angular/router";
-import { AppComponent } from "./app.component";
-import { HeroListComponent } from "./hero/hero-list.component";
-import { LoginComponent } from "./login/login.component";
+import { Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HeroListComponent } from './hero/hero-list.component';
+import { LoginComponent } from './login/login.component';
 
 export const appRoutes: Routes = [
     { path: 'crisis-center', component: AppComponent },

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
     templateUrl: './hero-list.component.html',
     styleUrls: ['./hero-list.component.css']
 })
+
 export class HeroListComponent {
     name: string = 'Vishnu Cherumadathil';
     heroes: any[] = [{
