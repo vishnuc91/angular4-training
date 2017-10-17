@@ -15,6 +15,6 @@ import { appRoutes } from './app.routes';
       { enableTracing: true } // <-- debugging purposes only
     )],
   declarations: [AppComponent, HeroListComponent, LoginComponent],
-  bootstrap: [AppComponent, LoginComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

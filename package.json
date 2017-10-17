@@ -9,7 +9,7 @@
     "serve": "lite-server -c=bs-config.json",
     "serve:e2e": "lite-server -c=bs-config.e2e.json",
     "prestart": "npm run build",
-    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "pree2e": "npm run build:e2e",
     "e2e": "concurrently \"npm run serve:e2e\" \"npm run protractor\" --kill-others --success first",
     "preprotractor": "webdriver-manager update",
@@ -55,7 +55,9 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~4.0.14",
     "rimraf": "^2.5.4",
-
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.1",
+    "webpack-merge": "^3.0.0"
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36"
   },
