@@ -10,7 +10,7 @@ import { SessionService } from './hero.services';
 
 export class HeroListComponent {
     name: string = 'Vishnu Cherumadathil';
-    value: string = '';
+    services:any = [];
     heroes: any[] = [{
         'name': 'vishnu',
         'age': 26
@@ -19,7 +19,6 @@ export class HeroListComponent {
     constructor(private _sessions: SessionService) { }
 
     ngOnInit(): void {
-        //console.log('sdsdsdsdsdsdsdsdsdsd', this._sessions.getMyServices());
-        console.log(this._sessions.getServices());
+        this.services = this._sessions.getServices();
     }
 }

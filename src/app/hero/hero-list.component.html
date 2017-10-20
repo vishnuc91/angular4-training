@@ -1,9 +1,9 @@
 <h2>Available Sessions of {{ name }}</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of heroes" 
+  <li *ngFor="let hero of services" 
   [class.selected]="hero === vishnu"
   (click)="onSelect(hero)">
-    <span class="badge">{{ hero.name }}</span>
+    <span class="badge">{{ hero.category }}{{ services }}</span>
     <!-- Age: {{ hero.age }} -->
   </li>
 </ul>
